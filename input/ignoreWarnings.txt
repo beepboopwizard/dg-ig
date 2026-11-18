@@ -1,6 +1,60 @@
 == Suppressed Messages ==
 
-# Hier könnt ihr Warnungen aus dem QA-Report unterdrücken.
-# Kopiert dazu den Text der Warnung exakt in eine eigene Zeile.
-# Schreibt über jede unterdrückte Warnung einen Kommentar mit dem Grund.
-# Errors lassen sich nicht unterdrücken, die müsst ihr beheben.
+# Dokumentierte Warnungen aus dem QA-Report. Keine Errors unterdrücken.
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+
+# Betrifft output/searchform.html: Die Suchseite wird durch die Build-Vorlage
+# erzeugt. Ich habe ihren HTML-Code nicht selbst geschrieben, die Meldung
+# betrifft nicht die FHIR-Regeln oder das Allergiebeispiel.
+The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+
+# Die automatisch erzeugte Übersicht zu Terminologie-Rechten ist in dieser kleinen Lab-Vorlage nicht als eigener Abschnitt eingebunden.
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+
+# Ein Vergleich verschiedener FHIR-Versionen ist für dieses Lab mit FHIR R4 nicht vorgesehen.
+An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+
+# Die Startseite nennt CH Core als Abhängigkeit. Die automatisch erzeugte ausführliche Abhängigkeitstabelle wird dort nicht zusätzlich eingebunden.
+An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+
+# Das IG definiert keine globalen Profile für alle Ressourcen eines Typs, die automatisch erzeugte Globals-Tabelle wird nicht eingebunden.
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
+# CH Term 3.3.0 ist in der Praktikumsvorlage zusammen mit CH Core 6.0.0
+# vorgegeben. Ich behalte diese Version für die Bearbeitung des Labs bei.
+The ImplementationGuide uses package ch.fhir.ig.ch-term#3.3.0 released on 2025-12-15, but the most recent appropriate version is 3.4.0. This reference is getting old and the more recent version should be considered
