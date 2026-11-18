@@ -6,26 +6,14 @@
 # Doku: https://fshschool.org/docs/sushi/configuration/
 # =====================================================================
 
-# TODO: Paket-ID. Nur Kleinbuchstaben, Ziffern und Punkte.
-# Ersetzt "vorlage" durch euer ZHAW-Kürzel, z. B. ch.zhaw.dg.amuster
-id: ch.zhaw.dg.vorlage
 
-# TODO: Adresse eurer GitHub-Pages-Seite, ohne Schrägstrich am Ende.
-# Muster: https://<github-benutzername>.github.io/<repo-name>
-canonical: https://example.github.io/dg-ig
-
-# TODO: Computerlesbarer Name, ohne Leerzeichen und Sonderzeichen.
-name: DGVorlageIG
-
-# TODO: Titel, der oben auf eurer IG-Seite steht.
-title: "DG Lab IG Vorlage"
-
-# TODO: Ein Satz zu eurem Use Case.
+id: ch.zhaw.dg.muellait
+canonical: https://beepboopwizard.github.io/dg-ig
+name: DGVmuellaitIG
+title: "DG Lab IG Aitana Müller"
 description: "Implementation Guide aus dem Lab Data Standards in Healthcare an der ZHAW."
-
-# TODO: Euer Name.
 publisher:
-  name: "ZHAW Data Standards in Healthcare, Vorname Nachname"
+  name: "ZHAW Data Standards in Healthcare, Aitana Müller"
 
 # ---------------------------------------------------------------------
 # Ab hier nichts ändern

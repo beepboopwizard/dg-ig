@@ -11,10 +11,7 @@
 // =====================================================================
 // Schritt 5: Euer Profil
 //
-// Die Kopfzeilen sind schon ausgefüllt. Für jede Anforderung aus dem
-// Aufgabenblatt steht unten eine auskommentierte Zeile mit dem Element.
-// Entfernt die // und ersetzt TODO_Regel durch die Regel, die ihr
-// gewählt habt. Eine Anforderung kann auch mehrere Zeilen brauchen.
+// Die sieben Anforderungen aus dem Aufgabenblatt sind unten umgesetzt.
 //
 // Wichtig: Hier stehen Regeln für alle Allergien, z. B. "criticality MS".
 // Einen Wert setzt ihr im Profil nur, wenn er für jede Allergie immer
@@ -39,26 +36,31 @@ Title: "DG Arzneimittelallergie"
 Description: "Arzneimittelallergie, wie sie in der Hausarztpraxis erfasst und auf der Notfallstation gelesen wird."
 
 // Anforderung 1: nur Allergien gegen Arzneimittel
-// * category TODO_Regel
+* category 1..1
+* category = #medication
 
 // Anforderung 2: klinischer Status
-// * clinicalStatus TODO_Regel
+* clinicalStatus 1..1
 
 // Anforderung 3: Codes aus der Schweizer Allergieliste ($ch-allergy-vs)
-// * code TODO_Regel
+* code 1..1
+* code from $ch-allergy-vs (extensible)
 
 // Anforderung 4: Kritikalität (wie gefährlich die Allergie ist)
-// * criticality TODO_Regel
+* criticality 1..1
+* criticality MS
 
 // Anforderung 5: Beginn der Allergie
-// * onset[x] TODO_Regel
+* onset[x] only dateTime or Age
 
 // Anforderung 6: wer die Allergie erfasst hat
-// * recorder TODO_Regel
+* recorder 1..1
+* recorder only Reference(CHCorePractitioner)
 
 // Anforderung 7: Reaktionen (die Symptome einer Reaktion stehen in reaction.manifestation)
-// * reaction TODO_Regel
-// * reaction.manifestation TODO_Regel   (nur falls ihr dafür eine Regel braucht)
+// Optional; bei bestätigten Allergien durch die Invariante verpflichtend.
+* reaction MS
+* reaction.manifestation from $ch-allergy-manifestation-vs (extensible)
 
-// Invariante (steht schon in invarianten.fsh), nur die // entfernen:
-// * obeys dg-allergy-1
+// Invariante: Bestätigte Allergien brauchen mindestens eine Reaktion.
+* obeys dg-allergy-1
